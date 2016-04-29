@@ -1,0 +1,274 @@
+﻿<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Primera Aplicacion</title>
+
+<!--grupo CSS-->
+<link rel="stylesheet" href="css/temasapp5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.icons-1.4.5.min.css"/>
+<link rel="stylesheet" href="css/jquery.mobile.structure-1.4.5.min.css"/>
+<!--grupo JavaScript-->
+<script src="js/jquery-1.11.2.min.js"></script>
+<script src="js/jquery.mobile-1.4.5.min.js"></script>
+<script src="js/acciones.js"></script>
+<script src="phonegap.js" type="text/javascript"></script>
+<script type="text/javascript">
+function MM_swapImgRestore() { //v3.0
+  var i,x,a=document.MM_sr; for(i=0;a&&i<a.length&&(x=a[i])&&x.oSrc;i++) x.src=x.oSrc;
+}
+function MM_preloadImages() { //v3.0
+  var d=document; if(d.images){ if(!d.MM_p) d.MM_p=new Array();
+    var i,j=d.MM_p.length,a=MM_preloadImages.arguments; for(i=0; i<a.length; i++)
+    if (a[i].indexOf("#")!=0){ d.MM_p[j]=new Image; d.MM_p[j++].src=a[i];}}
+}
+
+function MM_findObj(n, d) { //v4.01
+  var p,i,x;  if(!d) d=document; if((p=n.indexOf("?"))>0&&parent.frames.length) {
+    d=parent.frames[n.substring(p+1)].document; n=n.substring(0,p);}
+  if(!(x=d[n])&&d.all) x=d.all[n]; for (i=0;!x&&i<d.forms.length;i++) x=d.forms[i][n];
+  for(i=0;!x&&d.layers&&i<d.layers.length;i++) x=MM_findObj(n,d.layers[i].document);
+  if(!x && d.getElementById) x=d.getElementById(n); return x;
+}
+
+function MM_swapImage() { //v3.0
+  var i,j=0,x,a=MM_swapImage.arguments; document.MM_sr=new Array; for(i=0;i<(a.length-2);i+=3)
+   if ((x=MM_findObj(a[i]))!=null){document.MM_sr[j++]=x; if(!x.oSrc) x.oSrc=x.src; x.src=a[i+2];}
+}
+</script>
+</head>
+
+<body onLoad="MM_preloadImages('imagenes/images.jpeg','imagenes/tierracon1.jpg','imagenes/calentamiento1.jpg','imagenes/solucion1.jpg')">
+
+<div data-role="page" id="Principal" data-theme="a">
+<div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+<h1>Dia Mundial de la Tierra</h1>
+</div>
+<div data-role="main" class="ui-content">
+<div>
+<div>
+ <center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image6','','imagenes/images.jpeg',1)"><img src="imagenes/crop.jpg" width="165" height="149" id="Image6"></a></center></div>
+</div>
+</div>
+<div>
+<ul data-role="listview" data-theme="a" class="ui-listview ui-group-theme-a">
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina1" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Que es el dia de la Tierra?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina2" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>¿Porque se celebra?</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina3" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Cuidados del medio ambiente</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina4" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Contaminación</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina5" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Calentamiento Global</h2>
+</a>
+</li>
+<li class="ui-first-child ui-last-child">
+<a href="#Pagina6" class="ui-btn ui-btn-icon-right ui-icon-carat-r">
+<h2>Mi comunidad</h2>
+</a>
+</li>
+</ul>
+</div>
+<div data-role="footer" align="center" data-theme="a" data-position="fixed">
+  <div>
+  <h4>app5</h4>
+<h4>Mijael Flores Cerezo</h4>
+  </div>
+  </div>
+  </div>
+<div data-role="page" id="Pagina1" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Que es el dia de la Tierra?</h1>
+ 
+  </div>
+  <div data-role="content">
+  <div>
+   <p>El Día de la Tierra es un día celebrado en muchos países el 22 de abril. Su promotor, el senador estadounidense Gaylord Nelson.</p>
+ <p>Esta fecha fue elegida porque el 22 de abril de 1970 una manifestación en Estados Unidos para que se creara en el Gobierno una agencia ambiental que trabaje sobre las problemáticas medioambientales.</p>
+ <div>
+ <center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image4','','imagenes/images.jpeg',1)"><img src="imagenes/tierra.jpg" width="165" height="149" id="Image4"></a></center></div>
+   <div data-role="collapsible" data-content-theme="false">
+<h1>video dia de la tierra 2016</h1>
+<div>
+   <center><iframe width="80%" height="50%" src="https://www.youtube.com/embed/QA312NCm_T0" frameborder="0" allowfullscreen></iframe></center>
+</div>
+  </div>
+  </div>
+  <div data-role="footer" data-theme="a" data-position="fixed">
+  <h4>app5</h4>
+<h4>Mijael Flores Cerezo</h4>
+  </div>
+  </div>
+  </div>
+ 
+<div data-role="page" id="Pagina2" data-add-back-btn="true" data-theme="a">
+  <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+  <h1>¿Porque se celebra?</h1>
+ </div>
+<div data-role="content">
+ <div>
+ <p> Se instauró este día para crear una conciencia común a los problemas de la superpoblación, la producción de contaminación, la conservación de la biodiversidad y otras preocupaciones ambientales para proteger la Tierra. Es un día para rendir homenaje a nuestro planeta y reconocer a la Tierra como nuestro hogar y nuestra madre, así como lo han expresado distintas culturas a lo largo de la historia, demostrando la interdependencia entre sus ecosistemas y los seres vivos que la habitamos.</p>
+ <div>
+ <center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image5','','imagenes/tierracon1.jpg',1)"><img src="imagenes/tierracon.jpg" width="224" height="233" id="Image5"></a></center>
+  </div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>app5</h4>
+<h4>Mijael Flores Cerezo</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina3" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Cuidados del medio ambiente</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <li> satisfacer las necesidades del presente, sin comprometer la capacidad de satisfacer las necesidades de las generaciones futuras.</li>
+<p><center><img src="imagenes/suatentable.jpg" width="235" height="198"></center></p>
+<li> Usa el transporte público.</li>
+<li> Usar productos con certificación ecológica.</li>
+<li>Consume alimentos de temporada.</li>
+<li> Apaga la luz.</li>
+<li> Menos plásticos.</li>
+<li>Plantar árboles en su jardín y la comunidad.</li>
+<li>Evita los aerosoles que contienen CFCs y que son causantes de la destrucción de la capa de ozono</li>
+<li>Utiliza bolsas ecológicas en tus compras.</li>
+</ul>
+<div data-role="collapsible" data-content-theme="false">
+<h4>Regla de las tres "r"</h4>
+<div>
+<p>La regla de las tres erres, también conocida como las tres erres de la ecología o simplemente 3R, es una propuesta sobre hábitos de consumo, popularizada por la organización ecologista Greenpeace, que pretende desarrollar hábitos como el consumo responsable.</p>
+<br>
+<ul>
+<li>Reducir</li>
+<ul>
+<li>Reducir o eliminar la cantidad de materiales destinados a un uso único (por ejemplo, los embalajes).
+<li>Reducir pérdidas energéticas o de recursos: de agua, desconexión de aparatos eléctricos en stand by, conducción eficiente, desconectar transformadores</li>
+</ul>
+<li>Reutilizar</li>
+<p> Ésta se basa en reutilizar un objeto para darle una segunda vida útil.</p>
+<li>Reciclar</li>
+<p>Ésta es una de las erres más populares debido a que el sistema de consumo actual ha preferido usar envases de materiales reciclables (plásticos y bricks, sobre todo), pero no biodegradables.</p>
+</ul>
+<p><center><img src="imagenes/regla.jpg" width="261" height="114"></center></p>
+</div>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+<h4>app5</h4>
+<h4>Mijael Flores Cerezo</h4>
+ </div>
+ </div>
+ </div>
+
+<div data-role="page" id="Pagina4" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Tipos de contaminación</h1>
+ </div>
+ <div data-role="content">
+ <div>
+  <p><b>Contaminación Acustica</b></p>
+ <p>Se llama contaminación acústica o contaminación sonora al exceso de sonido que altera las condiciones normales del ambiente en una determinada zona. Si bien el ruido no se acumula, traslada o mantiene en el tiempo como las otras contaminaciones, también puede causar grandes daños en la calidad de vida de las personas si no se controla bien o adecuadamente.</p>
+ <p><center><img src="imagenes/sonora.jpg"></center></p>
+ <p><b>Contaminación Lumínica</b></p>
+ <p>La contaminación lumínica puede definirse como la emisión de flujo luminoso de fuentes artificiales de luz nocturnas en intensidades, direcciones, rangos espectrales u horarios innecesarios para la realización de las actividades previstas en la zona en la que se instalan las luces.</p>
+ <p><center><img src="imagenes/luminica.jpg" width="260" height="153"></center></p>
+ <p><b>Contaminación Térmica</b></p>
+ <p>La contaminación térmica se produce cuando un proceso altera la temperatura del medio de forma indeseada o perjudicial.</p>
+<p>El medio más habitual donde se produce es en el agua, ya que el aire se disipa más fácilmente. Pero también es posible, por ejemplo, cuando se concentra una gran cantidad de aparatos de aire acondicionado y estos expulsan el calor hacia la calle.</p>
+<p><center><img src="imagenes/termica.jpg"></center></p>
+ </div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>app5</h4>
+<h4>Mijael Flores Cerezo</h4>
+ </div>
+ </div>
+</div>
+<div data-role="page" id="Pagina5" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Calentamiento Global</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <p>Calentamiento global y cambio climático se refieren al aumento observado en los últimos siglos de la temperatura media del sistema climático de la Tierra y sus efectos.</p>
+ <div>
+<center>
+   <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image9','','imagenes/calentamiento1.jpg',1)"><img src="imagenes/calentamiento.jpg" width="257" height="196" id="Image9"></a></center>
+   </div>
+<div data-role="collapsible" data-content-theme="false">
+<h1>Beneficios de evitar la contaminación ambiental</h1>
+<div>
+<p>Hoy en día vivir en grandes ciudades para muchos no es agradable o ya no lo consideran apropiado para desarrollarse debido a que presentan grandes niveles de contaminación, es por ello que muchos optan por mudarse a lugares libres de contaminación y esto lo hacen por beneficio a su salud, por lo tanto los beneficios que puede tener evitar la contaminación ambiental son:</p>
+   <ul>
+	<li>Aumento de la esperanza de la vida.</li>
+
+	<li>Mejora la salud en general.</li>
+
+	<li>Se evitan enfermedades respiratorias.</li>
+
+	<li>Sensación de bienestar.</li>
+
+	<li>Se evitan otro tipo de enfermedades.</li>
+   </ul>
+</div>
+</div>
+</div>
+ </div>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>app5</h4>
+<h4>Mijael Flores Cerezo</h4>
+ </div>
+ </div>
+ </div>
+<div data-role="page" id="Pagina6" data-add-back-btn="true" data-theme="a">
+ <div data-role="header" data-add-back-btn="true" data-back-btn-text="Regresar" data-back-btn-theme="a">
+ <h1>Mi comunidad</h1>
+ </div>
+ <div data-role="content">
+ <div>
+ <div>
+<!-- Start WOWSlider.com -->
+<iframe src="visor/indexwow.html" style="width:960px;height:110px;max-width:100%;overflow:hidden;border:none;padding:0;margin:0 auto;display:block;" marginheight="0" marginwidth="0"></iframe>
+<!-- End WOWSlider.com -->
+ </div>
+ <br>
+<p>En la colonia en donde vivo hay unos terrenos que la misma gente de las cercanías las ha convertido como basureros clandestinos. Estos mismos han atraído alimañas, como ratas, paracitos, perros (roñosos, enfermos.) etc. Muchos de estos animales afectan a mucha gente, por ejemplo las casas de junto tienen que coexistir con ellos y no quedarles de otra que acostumbrase a ellos. Es un gran problema pues de esta manera se ocasionan muchas enfermedades que afectan a gente inocente.</p>
+<div>
+<center>
+  <a href="#" onMouseOut="MM_swapImgRestore()" onMouseOver="MM_swapImage('Image10','','imagenes/solucion1.jpg',1)"><img src="imagenes/problema.jpeg" width="200" height="150" id="Image10"></a></center></div>
+ </div>
+ <p>Para poder solucionar la contaminación en lotes baldíos, es importante que las autoridades que se encargan de la contaminación ambiental ayuden a esta colonia ya sea apoyarlos a llevar la basura al lugar correcto si ellos desean limpiar ese cierto lote o igual también pudieran realizar multas a la persona que sea visto arrojando basura en cualquier parte de nuestra ciudad, también se podrían crear centros de convivencia para las familias y así lograr una mejor comunidad. </p>
+ <p><center><img src="imagenes/solucion.jpg" width="219" height="210"></center></p>
+ <div data-role="footer" data-theme="a" data-position="fixed">
+ <h4>app5</h4>
+<h4>Mijael Flores Cerezo</h4>
+ </div>
+ </div>
+ </div>
+
+</body>
+ </html>
+
+
